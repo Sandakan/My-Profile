@@ -1,0 +1,432 @@
+@charset "utf-8";
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(125deg, #27ae60, #2980b9, #e74c3c, #8e44ad);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 500%;
+    margin: 0;
+    padding: 0;
+    font-family: "monoserrat", sans-serif;
+    animation: background 15s infinite;
+}
+
+@keyframes background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    00% {
+        background-position: 0% 50%;
+    }
+}
+
+#pic1 {
+    padding: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 200px;
+    animation: display1 800ms;
+    animation-iteration-count: 1;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, .8);
+    animation: enlarge 5s infinite;
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.info-pane {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: "monoserrat", sans-serif;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.greetings {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;;
+    color: rgba(127, 1, 164, .71);
+}
+
+.description {
+    margin: 0 auto;
+    padding: 50px;
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 24px;
+    word-spacing: 1px;;
+    font-size: 20px;
+}
+
+.family-description {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 10px;
+    color: rgba(127, 1, 164, .71);
+}
+
+.family-members {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.father,
+.mother,
+.elder-brother1,
+.elder-brother2 {
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.father span,
+.mother span,
+.elder-brother1 span,
+.elder-brother2 span {
+    display: block;
+    font-size: 16px;
+}
+
+#family-members-pic {
+    width: 80px;
+    padding: 10px;
+    border-radius: 80px;
+}
+
+.skills {
+    width: 90%;
+    background: transparent;
+    color: #313131;
+    padding: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.skills div {
+    width: 100%;
+    background: #607D8B;
+    height: 10px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: width 2s;
+}
+
+.html-bar::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    left: 0px;
+    border-radius: 8px;
+    background: #e74e3c;
+    transition: 1s;
+}
+
+.skills:hover .html-bar::before {
+    width: 80%;
+}
+
+.js-bar::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    left: 0px;
+    background: #2ecc71;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.skills:hover .js-bar::before {
+    width: 70%;
+}
+
+.css-bar::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    left: 0px;
+    background: #3498db;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.skills:hover .css-bar::before {
+    width: 50%;
+}
+
+.php-bar::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    left: 0px;
+    background: #9b59b6;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.skills:hover .php-bar::before {
+    width: 45%;
+}
+
+.skills span {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 10px;
+    color: rgba(127, 1, 164, .71);
+}
+
+h5 {
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.up {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.78);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 1;
+    transition: 0.2s;
+    transform: scale(0.8); 
+    display:none;
+}
+
+.up:hover {
+    opacity: 0.9;
+    transform: scale(1);
+}
+.upAnimation{
+    display: none;
+}
+
+footer {
+    width: 97.5%;
+    padding-top: 20px;
+    margin: 0 auto;
+    background: #313131;
+    position: relative;
+    border-radius: 5px;
+}
+
+footer .about-description {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+footer .about-information {
+    position: relative;
+    margin: 15px;
+    padding: 25px;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 24px;
+    font-size: 16px;
+    color: #fff;
+    width: 70%;
+}
+
+footer .social-media {
+    text-align: center;
+}
+
+#facebook,
+#instagram,
+#twitter {
+    margin: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+#facebook:hover {
+    color: rgb(0, 101, 175);
+    transform: scale(1.25);
+}
+
+#instagram:hover {
+    color: rgb(190, 38, 88);
+    transform: scale(1.25);
+}
+
+#twitter:hover {
+    color: rgb(39, 140, 244);
+    transform: rotate(-10deg) scale(1.25);
+}
+
+@keyframes display1 {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #pic1 {
+        width: 120px;
+    }
+    .name {
+        font-size: 35px;
+    }
+    .greetings {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .family-description {
+        font-size: 18px;
+    }
+    #family-members-pic {
+        width: 60px;
+    }
+    /*.father, .mother, .elder-brother1, .elder-brother2 {}    */
+
+
+    .father span, .mother span, .elder-brother1 span, .elder-brother2 span {
+        font-size: 14px;
+    }
+    .skills span {
+        font-size: 18px;
+    }
+    .skills h4 {
+        font-size: 14px;
+    }
+    .skills h5 {
+        font-size: 13px;
+    }
+    .up {
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        line-height: 27px;
+    }
+    .up i {
+        font-size: 16px;
+    }
+    footer .about-description {
+        font-size: 25px;
+    }
+    footer .social-media {
+        width: 20%;
+    }
+    footer img[alt="facebook"],
+    footer img[alt="instagram"],
+    footer img[alt="youtube"] {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    @media only screen and (max-width:400px) {
+        #pic1 {
+            width: 80px;
+        }
+        .name {
+            font-size: 25px;
+        }
+        .greetings {
+            font-size: 16px;
+        }
+        .description {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        .family-description {
+            font-size: 18px;
+        }
+        .father span,
+        .mother span,
+        .elder-brother1 span,
+        .elder-brother2 span {
+            font-size: 12px;
+        }
+        .skills h4 {
+            font-size: 12px;
+        }
+        .skills h5 {
+            font-size: 11px;
+        }
+        .up {
+            width: 25px;
+            height: 25px;
+            right: 10px;
+            line-height: 20px;
+        }
+        .up i {
+            font-size: 12px;
+        }
+        footer .about-description {
+            font-size: 20px;
+        }
+    }
+}

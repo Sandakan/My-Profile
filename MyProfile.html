@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="My Profile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG_20180420_200005_981.jpg" type="image/x-icon" style="border-radius:50%;">
+    <script src="Jquery v3.4.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                $(".up").show();
+            } else {
+                $(".up").hide();
+            }
+        } 
+    });
+    </script>
+
+</head>
+
+<body>
+    <div class="box">
+        <img src="IMG_20180420_200005_981.jpg" id="pic1">
+        <span class="name">Sandakan Nipunajith</span>
+    </div>
+    <div class="info-pane">
+        <div class="greetings">
+            Welcome !
+        </div>
+        <div class="description">
+            Happy to feel that there are some guys worry about me. Anyway, I'm Sandakan. Hopefully I am a Web Designer and a Gamer. Aware bit about programming. I'm 17 years old for 29 of April 2020. I'm studying at Mahanama College, Colombo 06 ,Sri Lanka at Grade
+            11. I have 5 members in my family.
+        </div>
+        <div class="family-description">
+            My Family :
+        </div>
+        <div class="family-members">
+            <div class="father">
+                <img src="IMG_20180420_200005_981.jpg" id="family-members-pic">
+                <span>Father :</span>
+                <span>Nimal Indrasiri</span>
+            </div>
+            <div class="mother">
+                <img src="IMG_20180420_200005_981.jpg" id="family-members-pic">
+                <span>Mother :</span>
+                <span>Pushpa Chandrika</span>
+            </div>
+            <div class="elder-brother1">
+                <img src="IMG_20180420_200005_981.jpg" id="family-members-pic">
+                <span>Elder Brother :</span>
+                <span>Thilina Madushanka</span>
+            </div>
+            <div class="elder-brother2">
+                <img src="IMG_20180420_200005_981.jpg" id="family-members-pic">
+                <span>Elder Brother :</span>
+                <span>Pasindu Priyashan</span>
+            </div>
+        </div>
+        <div class="skills">
+            <span>My Skills :</span>
+
+            <h4>HTML - 80%</h4>
+            <div class="html-bar"></div>
+
+            <h4>JAVASCRIPT - 70%</h4>
+            <div class="js-bar"></div>
+
+            <h4>CSS - 50%</h4>
+            <div class="css-bar"></div>
+
+            <h4>PHP - 45%</h4>
+            <div class="php-bar"></div>
+            <h5>Hover or touch to see the result</h5>
+        </div>
+
+    </div>
+    <a class="up"  href="#"><i class="fas fa-arrow-up"></i></a>
+    <br>
+    <br>
+    <footer>
+        <span class="about-description">About</span>
+        <div class="about-information">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/sandakan.nipunajith"><i class="fab fa-facebook" id="facebook"></i></a>
+            <a href="https://twitter.com/A_D_Sandakan">
+                <i class="fab fa-twitter" id="twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/_sandakan_/?hl=en"><i class="fab fa-instagram" id="instagram"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
