@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>My Profile</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="images/my-image.png" type="image/x-icon" style="border-radius: 50%" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://kit.fontawesome.com/080e99810e.js" crossorigin="anonymous"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/scroll-out-min.js"></script>
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</head>
+
+	<body id="body">
+		<nav>
+			<label class="logo">Sandakan Nipunajith</label>
+			<a class="burger" onclick="toggleSidePanelVisibility()"
+				><i class="fas fa-bars burger-icon"></i
+			></a>
+			<ul>
+				<li>
+					<a href="#" id="one" class="one" onclick="hideSidePanelInTabletMode()">Welcome</a>
+				</li>
+				<li>
+					<a href="#projects" id="two" class="two" onclick="hideSidePanelInTabletMode()"
+						>Projects</a
+					>
+				</li>
+				<li>
+					<a href="#skills" id="three" class="three" onclick="hideSidePanelInTabletMode()"
+						>Skills</a
+					>
+				</li>
+				<li>
+					<a href="#contact" id="four" class="four" onclick="hideSidePanelInTabletMode()"
+						>Contact</a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="box">
+			<img src="images/my-image.png" id="pic1" alt="" />
+			<span class="name">Sandakan Nipunajith</span>
+		</div>
+		<div class="info-pane">
+			<div class="greetings" id="greetings">
+				Welcome !
+				<span class="greetings-underline"></span>
+			</div>
+			<div class="des">
+				<div class="my-profile">
+					Hey, I'm Sandakan. I'm 18 years old. I am a Junior Web Designer and a Developer.
+					Interested in becoming a full-stack web developer. Loves things related to
+					technology. I'm studying at Mahanama College, Colombo 03, Sri Lanka in Grade 13.
+				</div>
+				<div class="description-picture">
+					<img src="images/undraw_personal_finance_tqcd.svg" alt="" class="svg" />
+				</div>
+			</div>
+			<div class="projects-description" id="projects-description">
+				My Recent Projects
+				<span class="projects-description-underline"></span>
+			</div>
+
+			<div class="projects-container" id="projects">
+				<div class="projects-container-inner">
+					<div class="project">
+						<img src="images/zeerum.png" class="projects-img" alt="" />
+						<span class="title">Zeerum</span>
+						<span class="description">Share knowledge (Work in progress)</span>
+						<span class="link"
+							><a href="https://zeerum.netlify.app/" target="_blank"
+								><i class="fas fa-link"></i> visit the site</a
+							></span
+						>
+					</div>
+					<div class="project">
+						<img src="images/calculator.png" class="projects-img" alt="" />
+						<span class="title">Simple Calculator</span>
+						<span class="description">Calculate easily</span>
+						<span class="link"
+							><a href="https://calculator-simple-web.netlify.app/" target="_blank"
+								><i class="fas fa-link"></i> visit the site</a
+							></span
+						>
+					</div>
+					<div class="project">
+						<img src="images/url-validator.png" class="projects-img" alt="" />
+						<span class="title">Url Validator</span>
+						<span class="description">Validate your URL</span>
+						<span class="link"
+							><a href="https://url-validator.netlify.app/" target="_blank"
+								><i class="fas fa-link"></i> visit the site</a
+							></span
+						>
+					</div>
+					<div class="project">
+						<img
+							src="images/numbers-to-words.png"
+							class="projects-img"
+							alt="PROFILE PICTURE"
+						/>
+						<span class="title">Numbers to Words Generator</span>
+						<span class="description">Change numbers into words</span>
+						<span class="link"
+							><a href="https://numbers-to-words-generator.netlify.app/" target="_blank"
+								><i class="fas fa-link"></i> visit the site</a
+							></span
+						>
+					</div>
+				</div>
+			</div>
+			<div class="skills" id="skills">
+				<span>My Skills </span>
+
+				<h4>HTML - 95%</h4>
+				<div class="html-bar">
+					<div class="html-bar-visible"></div>
+				</div>
+
+				<h4>JAVASCRIPT - 85%</h4>
+				<div class="js-bar">
+					<div class="js-bar-visible"></div>
+				</div>
+
+				<h4>CSS - 90%</h4>
+				<div class="css-bar">
+					<div class="css-bar-visible"></div>
+				</div>
+
+				<h4>NODEJS - 70%</h4>
+				<div class="nodejs-bar">
+					<div class="nodejs-bar-visible"></div>
+				</div>
+			</div>
+		</div>
+		<a class="up" href="#"><i class="fas fa-arrow-up"></i></a>
+		<br />
+		<br />
+		<footer id="contact" class="contact">
+			<span class="contact-description">Contact</span>
+			<div class="contact-information">
+				Contact me if you need anything
+				<ul>
+					<li>
+						Email :
+						<a href="mailto:sandakannipunajith@gmail.com">sandakannipunajith@gmail.com</a>
+						/
+						<a href="mailto:adsandakannipunajith2003@outlook.com"
+							>adsandakannipunajith2003@outlook.com</a
+						>
+					</li>
+					<li>
+						Mobile : <a href="tel:(+94)715889803">(+94) 71 588 9803</a> /
+						<a href="tel:(+94)714275949">(+94) 71 427 5949</a>
+					</li>
+				</ul>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<div class="social">
+				<div class="twitter-container">
+					<a href="https://twitter.com/A_D_Sandakan" id="twitter" target="_blank"
+						><i class="fab fa-twitter"></i
+					></a>
+				</div>
+				<div class="instagram-container">
+					<a href="https://www.instagram.com/_sandakan_" id="instagram" target="_blank"
+						><i class="fab fa-instagram"></i
+					></a>
+				</div>
+				<div class="facebook-container">
+					<a href="https://www.facebook.com/sandakan.nipunajith" id="facebook" target="_blank"
+						><i class="fab fa-facebook"></i
+					></a>
+				</div>
+				<div class="phone-container">
+					<a href="tel:+94714275949" id="phone"><i class="fas fa-phone-square-alt"></i></a>
+				</div>
+			</div>
+			<span class="copyright"
+				>&copy; 2021 All rights reserved. Made with <span class="heart">❤</span> by
+				Sandakan.</span
+			>
+		</footer>
+		<script>
+			ScrollOut({
+				targets: ['.greetings', '.projects-description', '.skills', '.contact'],
+			});
+		</script>
+	</body>
+</html>
